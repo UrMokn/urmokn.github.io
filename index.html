@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>電気通信術 - フォネティックコード練習アプリ</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <script src="https://keepandroidopen.org/banner.js?size=minimal&animation=off"></script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased selection:bg-primary/30">
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-icons text-white">radio</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-primary">電気通信術</span>
+</div>
+<div class="hidden md:flex items-center gap-8 text-sm font-medium">
+<a class="hover:text-primary transition-colors" href="#features">特徴</a>
+<a class="hover:text-primary transition-colors" href="#how-to">使い方</a>
+<a class="bg-primary text-white px-5 py-2.5 rounded-full hover:bg-primary/90 transition-all shadow-lg shadow-primary/20" href="#download">無料ダウンロード</a>
+</div>
+<button class="md:hidden text-slate-600 dark:text-slate-300">
+<span class="material-icons">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-40">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold tracking-wide">New</div>
+<h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.15] text-slate-900 dark:text-white">
+<span class="text-primary">航空通</span>
+などの対策に。
+</h1>
+<p class="text-lg text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed">
+フォネティックコードの受話・送話練習アプリです。(Androidに対応)
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:scale-105 transition-transform shadow-xl shadow-primary/25" href="#download">
+<span class="material-icons">file_download</span>今すぐダウンロード</a>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-20 -right-20 w-96 h-96 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+<div class="absolute -bottom-20 -left-20 w-72 h-72 bg-primary/5 rounded-full blur-2xl -z-10"></div>
+<div class="relative mx-auto w-full max-w-[320px] aspect-[9/19.5] bg-slate-900 rounded-[3rem] p-3 border-[8px] border-slate-800 shadow-2xl">
+<div class="w-full h-full bg-white dark:bg-slate-900 rounded-[2rem] overflow-hidden relative group">
+<img alt="Practice Screen" class="w-full h-full object-cover" data-alt="Modern smartphone app interface showing phonetic code practice" src="https://dev.urmokn.com/site/img1.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section class="py-24 bg-white dark:bg-background-dark/50" id="features">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-20 space-y-4">
+<h2 class="text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white">選ばれる3つの理由</h2>
+<div class="w-16 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Feature 1 -->
+<div class="group p-8 rounded-2xl bg-background-light dark:bg-slate-800/50 hover:bg-white dark:hover:bg-slate-800 transition-all border border-transparent hover:border-primary/20 hover:shadow-2xl hover:shadow-primary/5">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons text-primary text-3xl">touch_app</span>
+</div>
+<h3 class="text-xl font-bold mb-4">直感的な操作</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        余計な機能を削ぎ落とし、練習に集中できるミニマルなデザインを実現しました。誰でも迷わずすぐに始められます。
+                    </p>
+</div>
+<!-- Feature 2 -->
+<div class="group p-8 rounded-2xl bg-background-light dark:bg-slate-800/50 hover:bg-white dark:hover:bg-slate-800 transition-all border border-transparent hover:border-primary/20 hover:shadow-2xl hover:shadow-primary/5">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons text-primary text-3xl">speed</span>
+</div>
+<h3 class="text-xl font-bold mb-4">自由な速度設定</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        自分のレベルに合わせて、受話音声の再生速度を調整可能。段階的に成長できます。
+                    </p>
+</div>
+<!-- Feature 3 -->
+<div class="group p-8 rounded-2xl bg-background-light dark:bg-slate-800/50 hover:bg-white dark:hover:bg-slate-800 transition-all border border-transparent hover:border-primary/20 hover:shadow-2xl hover:shadow-primary/5">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-icons text-primary text-3xl">swap_horiz</span>
+</div>
+<h3 class="text-xl font-bold mb-4">受話練習</h3>
+<p class="text-slate-600 dark:text-slate-400 leading-relaxed">送話のみではなく受話も練習が可能です</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Download Section -->
+<section class="py-24 relative overflow-hidden" id="download">
+<div class="max-w-4xl mx-auto px-6 text-center">
+<div class="bg-primary p-12 lg:p-20 rounded-[2rem] text-white relative shadow-2xl shadow-primary/40 overflow-hidden">
+<!-- Abstract Decor -->
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-48 h-48 bg-white/10 rounded-full blur-2xl"></div>
+<div class="relative z-10 space-y-8">
+<h2 class="text-3xl lg:text-5xl font-bold">今すぐ、練習を始めよう</h2>
+<p class="text-primary-100/80 text-lg">
+                        Androidに対応。完全無料で始められます。
+                    </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-6 pt-4">
+<a href="https://play.google.com/store/apps/details?id=com.urmokn.phonetic"><img src="https://play.google.com/intl/ja/badges/static/images/badges/ja_badge_web_generic.png" alt="Google Play で手に入れよう" style="height:80px;margin-top:-7px"/></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="py-12 border-t border-primary/10">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex items-center gap-2 grayscale opacity-70">
+<div class="w-8 h-8 bg-slate-400 rounded-md flex items-center justify-center">
+<span class="material-icons text-white text-sm">radio</span>
+</div>
+<span class="font-bold tracking-tight">電気通信術</span>
+</div>
+<div class="flex gap-8 text-sm text-slate-500">
+<a class="hover:text-primary transition-colors" href="https://contact.urmokn.com/1.html">プライバシーポリシー</a>
+<a class="hover:text-primary transition-colors" href="https://contact.urmokn.com/2.html">利用規約</a>
+<!--<a class="hover:text-primary transition-colors" href="#">お問い合わせ</a>-->
+</div>
+<p class="text-sm text-slate-400">
+                &#169; 2026 UrMokn All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>
