@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Policies & Terms</title>
+
+<style>
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  padding: 24px;
+  background-color: #fafafa;
+  color: #333;
+}
+
+.container {
+  max-width: 720px;
+  margin: auto;
+}
+
+.lang-switch {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.lang-switch button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 1.2em;
+  color: #222;
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.card p {
+  margin: 0.5em 0 1em;
+  color: #555;
+}
+
+.card a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #007aff;
+  color: white;
+}
+
+.card a:hover {
+  background: #005fcc;
+}
+
+footer {
+  margin-top: 3em;
+  font-size: 0.9em;
+  color: #666;
+  text-align: center;
+}
+
+.content {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="lang-switch">
+    <button onclick="setLang('ja')">🇯🇵 日本語</button>
+    <button onclick="setLang('en')">🇺🇸 English</button>
+  </div>
+
+  <!-- Japanese -->
+  <div id="ja" class="content">
+
+    <h1>ポリシー・規約一覧</h1>
+
+    <div class="card">
+      <h2>プライバシーポリシー</h2>
+      <p>
+        本アプリにおける個人情報およびデータの取り扱いについて記載しています。
+      </p>
+      <a href="1.html">プライバシーポリシーを見る</a>
+    </div>
+
+    <div class="card">
+      <h2>利用規約</h2>
+      <p>
+        本アプリの利用条件、禁止事項、免責事項等について記載しています。
+      </p>
+      <a href="2.html">利用規約を見る</a>
+    </div>
+
+  </div>
+
+  <!-- English -->
+  <div id="en" class="content">
+
+    <h1>Policies & Terms</h1>
+
+    <div class="card">
+      <h2>Privacy Policy</h2>
+      <p>
+        Learn how personal information and device data are handled in our applications.
+      </p>
+      <a href="1.html">View Privacy Policy</a>
+    </div>
+
+    <div class="card">
+      <h2>Terms of Service</h2>
+      <p>
+        Read the terms, conditions, restrictions, and disclaimers for using our applications.
+      </p>
+      <a href="2.html">View Terms of Service</a>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 UrMokn All rights reserved.
+  </footer>
+
+</div>
+
+<script>
+function setLang(lang) {
+  document.getElementById("ja").style.display =
+    lang === "ja" ? "block" : "none";
+
+  document.getElementById("en").style.display =
+    lang === "en" ? "block" : "none";
+
+  document.documentElement.lang = lang;
+  localStorage.setItem("lang", lang);
+}
+
+window.onload = () => {
+  const savedLang = localStorage.getItem("lang");
+
+  if (savedLang) {
+    setLang(savedLang);
+    return;
+  }
+
+  const browserLang = navigator.language || navigator.userLanguage;
+
+  if (browserLang.startsWith("ja")) {
+    setLang("ja");
+  } else {
+    setLang("en");
+  }
+};
+</script>
+
+</body>
+</html>
